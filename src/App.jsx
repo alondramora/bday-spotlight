@@ -12,9 +12,6 @@ export default function App() {
         <Celebrant name="Alondra" />
         <Celebrant name="Leo" />
       </section>
-      <section>
-        <Spotlight name="Zane" />
-      </section>
     </>
   );
 }

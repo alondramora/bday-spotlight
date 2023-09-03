@@ -1,3 +1,5 @@
-export default function Spotlight({ name }) {
-  return <p>{name}</p>;
+import Celebrant from "./Celebrant";
+
+export default function Spotlight() {
+  return <p>Success</p>;
 }
