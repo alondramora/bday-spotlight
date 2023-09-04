@@ -1,7 +1,4 @@
-import App from "../App";
-import Spotlight from "./Spotlight";
-
-export default function Celebrant({ name, birthday, age, onClick }) {
+export default function Celebrant({ name, onClick }) {
   return <button onClick={onClick}>{name}</button>;
 }
 

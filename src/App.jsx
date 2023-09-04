@@ -17,22 +17,21 @@ export default function App() {
     <>
       <Header />
       <ul className="celebrantButtons">
-        {celebrants.map((celebrant) => {
-          return (
-            <li key={celebrant.id}>
-              <Celebrant
-                name={celebrant.name}
-                age={celebrant.age}
-                birthday={celebrant.birthday}
-                onClick={() => handleClick(celebrant)}
-              />
-            </li>
-          );
-        })}
+        {celebrants.length > 1 &&
+          celebrants.map((celebrant) => {
+            return (
+              <li key={celebrant.id}>
+                <Celebrant
+                  name={celebrant.name}
+                  onClick={() => handleClick(celebrant)}
+                />
+              </li>
+            );
+          })}
       </ul>
-      <section className="spotlightSection">
-        <Spotlight currentCelebrant={spotlight} />
-      </section>
+      <Spotlight currentCelebrant={spotlight} />
     </>
   );
 }
+
+// dont render any Celebrant components if there is <= 1 celebrant in the array
