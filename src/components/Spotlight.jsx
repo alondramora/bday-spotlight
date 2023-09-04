@@ -2,12 +2,12 @@ import App from "../App";
 import Celebrant from "./Celebrant";
 App;
 
-export default function Spotlight(props) {
+export default function Spotlight({ currentCelebrant }) {
   return (
     <section className="bdaySpotlight">
-      <p>{props.name}</p>
-      <p>{props.birthday}</p>
-      <p>{props.age}</p>
+      <p>{currentCelebrant.name}</p>
+      <p>{currentCelebrant.birthday}</p>
+      <p>{currentCelebrant.age}</p>
     </section>
   );
 }
