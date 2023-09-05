@@ -6,7 +6,7 @@ import Spotlight from "./components/Spotlight";
 import celebrants from "./utils/celebrants";
 
 export default function App() {
-  const [spotlight, setSpotlight] = useState(celebrants[0]);
+  const [spotlight, setSpotlight] = useState("");
 
   const handleClick = (celebrant) => {
     // when we click on a Celebrant component, we want to display the corresponding Spotlight component inside of the .spotlightSection section
@@ -29,6 +29,9 @@ export default function App() {
             );
           })}
       </ul>
+      <span>
+        Click on a person's name above to see their birthday and age info.
+      </span>
       <Spotlight currentCelebrant={spotlight} />
     </>
   );
