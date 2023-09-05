@@ -8,8 +8,8 @@ Birthday Spotlight is a web application built with Vite.js and React. When you c
 - Displays a "spotlight" highlighting a person's name, age, and birthday.
 
 🚀 Optimizations:
-- Add styling and additional information to the Spotlight component
-- Tie in a database to store birthdays rather than using a hard coded array of the data 
+- Add styling and additional information to the Spotlight component.
+- Tie in a database to store birthdays rather than using a hard coded array of the data.
 
 ## Technologies Used
 - [Vite.js](https://vitejs.dev/) - A blazing fast frontend build tool.
